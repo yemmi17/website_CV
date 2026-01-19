@@ -1,19 +1,6 @@
-# 🚀 Portfolio Website - Ali Raza
+# 🚀 Maria - Marketing Specialist Portfolio
 
-Modern, responsive portfolio website built with HTML, CSS, JavaScript and Vite.
-
-## 🌐 Live Demo
-[Add your live URL here]
-
-## 🛠️ Tech Stack
-- HTML5, CSS3, JavaScript (ES6+)
-- Vite (Build Tool)
-- Docker (Containerization)
-- Nginx (Production Server)
-
-## 📦 Installation & Setup
-
-### Option 1: Local Development
+Современное портфолио маркетинг-специалиста с адаптивным дизайном, построенное на Vite.
 ```bash
 # 1. Clone repository
 git clone https://github.com/yourusername/portfolio.git
