@@ -1,0 +1,8 @@
+/* Home page specific styles */
+.home-section {
+    padding: 4rem 0;
+  }
+  
+  .home-section:nth-child(even) {
+    background-color: #f9fafb;
+  }

@@ -1,0 +1,15 @@
+.footer {
+  background-color: #ffffff;
+  color: rgb(46, 46, 46);
+  padding: 0.25rem 0; /* 4px */
+  text-align: center;
+  margin-top: 0.5rem; /* 8px */
+  border-top: 1px solid #e5e7eb; /* Добавить разделительную линию */
+  font-size: 0.75rem; /* 12px */
+}
+
+.footer p {
+  margin: 0;
+  padding: 0.25rem 0;
+  opacity: 0.7;
+}
