@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria | Marketing Specialist</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./src/styles/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="/" class="navbar__logo">Maria</a>
+      
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+      
+      <ul class="navbar__menu">
+        <li><a href="#home" class="navbar__link active">Home</a></li>
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#projects" class="navbar__link">Projects</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+      
+      <div class="navbar__social">
+        <a href="#" class="navbar__social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="navbar__social-link" aria-label="GitHub">gh</a>
+        <a href="#" class="navbar__social-link" aria-label="Dribbble">db</a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="hero__badge">Marketing Specialist</span>
+          <h1 class="hero__title">
+            Hi, I'm <span class="highlight">Maria</span>
+          </h1>
+          <p class="hero__description">
+            I create captivating digital experiences that drive growth and build lasting brand connections.
+          </p>
+          
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="50">0</span>
+              <span class="hero__stat-label">Projects</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="5">0</span>
+              <span class="hero__stat-label">Years Exp</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="95">0</span>
+              <span class="hero__stat-label">Satisfaction</span>
+            </div>
+          </div>
+          
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Get in Touch</a>
+            <a href="#projects" class="btn btn--secondary">View Work</a>
+          </div>
+        </div>
+        
+        <div class="hero__image">
+          <div class="hero__image-wrapper">
+            <img 
+              src="/images/avatar.jpg" 
+              alt="Maria - Marketing Specialist"
+              loading="lazy"
+              width="600"
+              height="600"
+            >
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero__scroll">
+        <span class="hero__scroll-text">Scroll to explore</span>
+        <div class="hero__scroll-icon"></div>
+      </div>
+    </section>
+    
+    <!-- Add more sections here as needed -->
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Maria. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  
+  <!-- JavaScript -->
+  <script type="module" src="./src/scripts/main.js"></script>
+</body>
+</html>

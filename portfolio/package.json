@@ -1,34 +1,25 @@
 {
-    "name": "portfolio",
+    "name": "maria-portfolio",
     "version": "1.0.0",
-    "description": "Ali Raza's Portfolio Website",
+    "description": "Marketing Specialist Portfolio",
+    "type": "module",
     "main": "index.html",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview",
-        "start": "vite --host",
-        "docker:build": "docker build -t portfolio .",
-        "docker:run": "docker run -p 3000:80 portfolio",
-        "docker:dev": "docker-compose up --build"
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "predeploy": "npm run build",
+      "deploy": "echo 'Add your deployment command here'",
+      "format": "prettier --write .",
+      "lint": "eslint ."
     },
-    "keywords": [
-        "portfolio",
-        "developer",
-        "web"
-    ],
-    "author": "Ali Raza",
+    "keywords": ["portfolio", "marketing", "vite"],
+    "author": "Maria",
     "license": "MIT",
     "devDependencies": {
-        "vite": "^5.4.21"
+      "vite": "^5.0.0"
     },
     "dependencies": {
-        "esbuild": "^0.21.5",
-        "nanoid": "^3.3.11",
-        "picocolors": "^1.1.1",
-        "postcss": "^8.5.6",
-        "rollup": "^4.55.2",
-        "source-map-js": "^1.2.1"
-    },
-    "type": "commonjs"
-}
+      "lazysizes": "^5.3.2"
+    }
+  }
