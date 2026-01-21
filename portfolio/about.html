@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Maria - Marketing Specialist</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="src/styles/pages/about.css">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="/" class="navbar__logo">Maria</a>
+      
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+      
+      <ul class="navbar__menu">
+        <li><a href="index.html" class="navbar__link">Home</a></li>
+        <li><a href="about.html" class="navbar__link active">About</a></li>
+        <li><a href="projects.html" class="navbar__link">Projects</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+      
+      <div class="navbar__social">
+        <a href="#" class="navbar__social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="navbar__social-link" aria-label="GitHub">gh</a>
+        <a href="#" class="navbar__social-link" aria-label="Dribbble">db</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="main-content" class="main about-page">
+    <!-- Простая секция -->
+    <section class="simple-section">
+      <div class="container">
+        <div class="simple-content">
+          <h1 class="simple-title">About Maria</h1>
+          <p class="simple-subtitle">Marketing Specialist & Digital Experience Creator</p>
+          
+          <div class="about-grid">
+            <div class="about-text">
+              <p>Hi! I'm Maria, a passionate marketing specialist with over 5 years of experience in creating digital experiences that connect brands with people.</p>
+              
+              <p>My journey started in social media management, where I discovered the power of storytelling. Now I help brands build their online presence through strategic marketing, compelling design, and data-driven decisions.</p>
+              
+              <div class="about-stats">
+                <div class="stat">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">5</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">95%</span>
+                  <span class="stat-label">Client Satisfaction</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-image">
+              <img src="/images/avatar.jpg" alt="Maria" style="border-radius: 20px; width: 100%; max-width: 400px;">
+            </div>
+          </div>
+          
+          <div class="simple-actions">
+            <a href="/pages/contact.html" class="btn btn--primary">Get in Touch</a>
+            <a href="/pages/projects.html" class="btn btn--secondary">View My Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year">2024</span> Maria. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

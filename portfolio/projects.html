@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Maria - Marketing Specialist</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script type="module" src="src/scripts/main.js"></script>
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="/" class="navbar__logo">Maria</a>
+      
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+      
+      <ul class="navbar__menu">
+        <li><a href="index.html" class="navbar__link">Home</a></li>
+        <li><a href="about.html" class="navbar__link active">About</a></li>
+        <li><a href="projects.html" class="navbar__link">Projects</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+      
+      <div class="navbar__social">
+        <a href="#" class="navbar__social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="navbar__social-link" aria-label="GitHub">gh</a>
+        <a href="#" class="navbar__social-link" aria-label="Dribbble">db</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="main-content" class="main projects-page">
+    <section class="simple-section">
+      <div class="container">
+        <div class="simple-content">
+          <h1 class="simple-title">My Projects</h1>
+          <p class="simple-subtitle">A collection of successful marketing campaigns and brand transformations</p>
+          
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Project">
+              </div>
+              <div class="project-content">
+                <h3>E-commerce Brand Revamp</h3>
+                <p>Complete digital transformation resulting in 150% revenue growth.</p>
+                <a href="#" class="project-link">View Case Study →</a>
+              </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Media Campaign">
+              </div>
+              <div class="project-content">
+                <h3>Viral Social Campaign</h3>
+                <p>2M+ impressions and 300% engagement increase across platforms.</p>
+                <a href="#" class="project-link">View Case Study →</a>
+              </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="UX Redesign">
+              </div>
+              <div class="project-content">
+                <h3>SaaS Platform UX Redesign</h3>
+                <p>40% reduction in bounce rate and improved user retention.</p>
+                <a href="#" class="project-link">View Case Study →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="simple-actions">
+            <a href="/pages/contact.html" class="btn btn--primary">Start Your Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year">2026</span> Maria. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
