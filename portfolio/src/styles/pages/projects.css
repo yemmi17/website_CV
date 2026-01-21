@@ -1,31 +1,48 @@
-/* Projects Page Styles */
-.projects-page .simple-section {
+/* Projects Page Specific Styles */
+.projects-page {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .projects-hero {
     padding: 8rem 0 4rem;
+    text-align: center;
+  }
+  
+  .projects-hero__title {
+    font-size: 3.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .projects-hero__subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 3rem;
   }
   
   .projects-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin: 3rem 0;
-  }
-  
-  @media (min-width: 768px) {
-    .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+    margin: 3rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
   }
   
   .project-card {
-    background: white;
-    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
   
   .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   
   .project-image {
@@ -37,33 +54,100 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.1);
   }
   
   .project-content {
     padding: 1.5rem;
   }
   
-  .project-content h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    color: #1f2937;
+  .project-category {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
   }
   
-  .project-content p {
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-description {
     color: #6b7280;
-    margin-bottom: 1rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .project-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .project-stat {
+    text-align: center;
+  }
+  
+  .stat-value {
+    display: block;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #6366f1;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
   }
   
   .project-link {
-    color: #6366f1;
-    font-weight: 600;
-    text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    color: #6366f1;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1rem;
   }
   
   .project-link:hover {
     gap: 0.75rem;
   }
+  
+  .projects-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  /* Отступ сверху для контента, чтобы не залезал под фиксированный header */
+.simple-content {
+  padding-top: 6rem; /* Отступ сверху */
+}
+
+/* Или конкретно для заголовка */
+.simple-title {
+  margin-top: 4rem; /* Отступ для заголовка */
+}
+
+/* Или для всей секции */
+.projects-page .simple-section {
+  padding-top: 8rem; /* Большой отступ сверху */
+  padding-bottom: 4rem;
+}

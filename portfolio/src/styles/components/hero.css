@@ -72,11 +72,10 @@
   }
   
   .hero__image-wrapper img {
-    width: 100%;
-    height: auto;
-    transform: translateZ(20px);
-    transition: transform var(--transition-slow);
-  }
+  width: 100%;
+  height: auto; /* Сохраняем пропорции! */
+  display: block;
+}
   
   .hero__image:hover .hero__image-wrapper img {
     transform: scale(1.05) translateZ(20px);
@@ -134,7 +133,7 @@
     font-size: var(--font-size-xl);
     color: var(--color-text-light);
     line-height: var(--line-height-loose);
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--spacing-4);
     max-width: 600px;
   }
   
@@ -169,6 +168,7 @@
     flex-wrap: wrap;
     gap: var(--spacing-4);
     align-items: center;
+    margin-bottom: var(--spacing-4);
   }
   
   .hero__scroll {

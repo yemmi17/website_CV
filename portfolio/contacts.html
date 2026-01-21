@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Maria - Marketing Specialist</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="src/styles/pages/contact.css">
+  
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  
+  <style>
+    .contact-page {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #8b5cf6 0%, rgba(139, 92, 246, 0.1) 50%, transparent 100%);
+    }
+    
+    .contact-page::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="contact-page">
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="navbar__logo">Maria</a>
+      
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+      
+      <ul class="navbar__menu">
+        <li><a href="/" class="navbar__link">Home</a></li>
+        <li><a href="about" class="navbar__link">About</a></li>
+        <li><a href="projects" class="navbar__link">Projects</a></li>
+        <li><a href="contacts" class="navbar__link active">Contacts</a></li>
+      </ul>
+      
+      <div class="navbar__social">
+        <a href="https://www.linkedin.com/" class="navbar__social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="navbar__social-link" aria-label="Telegram">tg</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="main-content" class="main">
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero__content">
+          <h1 class="contact-hero__title">Get in Touch</h1>
+          <p class="contact-hero__subtitle">
+            Ready to start your next project? Let's create something amazing together
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <h2 class="section-title">Send a Message</h2>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="What is this regarding?">
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn--primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="contact-info-container">
+            <h2 class="section-title">Contact Info</h2>
+            
+            <div class="contact-info">
+              <div class="info-item">
+                <div class="info-icon">���</div>
+                <div class="info-content">
+                  <h3 class="info-title">Email</h3>
+                  <a href="mailto:hello@maria.com" class="info-link">hello@maria.com</a>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <div class="info-icon">���</div>
+                <div class="info-content">
+                  <h3 class="info-title">Phone</h3>
+                  <a href="tel:+1234567890" class="info-link">+1 (234) 567-890</a>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <div class="info-icon">���</div>
+                <div class="info-content">
+                  <h3 class="info-title">Location</h3>
+                  <p class="info-text">New York, NY</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <div class="info-icon">���</div>
+                <div class="info-content">
+                  <h3 class="info-title">Availability</h3>
+                  <p class="info-text">Mon - Fri: 9AM - 6PM EST</p>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year">2024</span> Maria. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  
+  <script type="module" src="src/scripts/main.js"></script>
+  <script>
+    // Простая валидация формы
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your message has been sent. I\'ll get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

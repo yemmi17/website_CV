@@ -11,6 +11,9 @@
 
 /* Pages */
 @import './pages/about.css';
+@import './pages/projects.css';
+@import './pages/contact.css';
+
 
 /* Utility Classes */
 .container {

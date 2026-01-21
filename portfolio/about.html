@@ -12,9 +12,29 @@
   <link rel="stylesheet" href="src/styles/main.css">
   <link rel="stylesheet" href="src/styles/pages/about.css">
   
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  
+  <style>
+    .about-page {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #6366f1 0%, rgba(99, 102, 241, 0.1) 50%, transparent 100%);
+    }
+    
+    .about-page::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+      z-index: -1;
+    }
+  </style>
 </head>
-<body>
+<body class="about-page">
   <header class="header">
     <nav class="navbar container">
       <a href="/" class="navbar__logo">Maria</a>
@@ -24,72 +44,83 @@
       </button>
       
       <ul class="navbar__menu">
-        <li><a href="index.html" class="navbar__link">Home</a></li>
-        <li><a href="about.html" class="navbar__link active">About</a></li>
-        <li><a href="projects.html" class="navbar__link">Projects</a></li>
-        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+        <li><a href="/" class="navbar__link">Home</a></li>
+        <li><a href="about" class="navbar__link active">About</a></li>
+        <li><a href="projects" class="navbar__link">Projects</a></li>
+        <li><a href="contacts" class="navbar__link">Contact</a></li>
       </ul>
       
       <div class="navbar__social">
-        <a href="#" class="navbar__social-link" aria-label="LinkedIn">in</a>
-        <a href="#" class="navbar__social-link" aria-label="GitHub">gh</a>
-        <a href="#" class="navbar__social-link" aria-label="Dribbble">db</a>
+        <a href="https://www.linkedin.com/" class="navbar__social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="navbar__social-link" aria-label="Telegram">tg</a>
       </div>
     </nav>
   </header>
   
-  <main id="main-content" class="main about-page">
-    <!-- Простая секция -->
-    <section class="simple-section">
-      <div class="container">
-        <div class="simple-content">
-          <h1 class="simple-title">About Maria</h1>
-          <p class="simple-subtitle">Marketing Specialist & Digital Experience Creator</p>
-          
-          <div class="about-grid">
-            <div class="about-text">
-              <p>Hi! I'm Maria, a passionate marketing specialist with over 5 years of experience in creating digital experiences that connect brands with people.</p>
-              
-              <p>My journey started in social media management, where I discovered the power of storytelling. Now I help brands build their online presence through strategic marketing, compelling design, and data-driven decisions.</p>
-              
-              <div class="about-stats">
-                <div class="stat">
-                  <span class="stat-number">50+</span>
-                  <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat">
-                  <span class="stat-number">5</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat">
-                  <span class="stat-number">95%</span>
-                  <span class="stat-label">Client Satisfaction</span>
-                </div>
-              </div>
-            </div>
+<!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            About me <span class="highlight"></span>
+          </h1>
+          <p class="hero__description">
+            Marketing specialist with over 5 years of experience
+           </p>
+
+          <div class="hero__actions">
+            <p>
+              My journey in marketing started with a fascination for how brands tell stories. 
+              Over the years, I've worked with startups and established companies to develop 
+              marketing strategies that not only look good but deliver measurable results.
+            </p>
             
-            <div class="about-image">
-              <img src="/images/avatar.jpg" alt="Maria" style="border-radius: 20px; width: 100%; max-width: 400px;">
-            </div>
+            <p>
+              I believe in data-driven decisions, compelling storytelling, and creating 
+              experiences that people remember. Whether it's a social media campaign or a 
+              complete brand overhaul, my focus is always on creating genuine connections.
+            </p>
+            
+            <p>
+              When I'm not working on marketing campaigns, you can find me exploring new design tools, 
+              reading about consumer psychology, or enjoying a good cup of coffee.
+            </p>
           </div>
-          
-          <div class="simple-actions">
-            <a href="/pages/contact.html" class="btn btn--primary">Get in Touch</a>
-            <a href="/pages/projects.html" class="btn btn--secondary">View My Work</a>
+
+          <div class="hero__actions">
+            <a href="/contacts" class="btn btn--primary">Get in Touch</a>
+            <a href="/projects" class="btn btn--secondary">View Work</a>
+          </div>
+        </div>
+        
+        <div class="hero__image">
+          <div class="hero__image-wrapper">
+            <img 
+              src="/images/avatar.jpg" 
+              alt="Maria - Marketing Specialist"
+              loading="lazy"
+              width="600"
+              height="600"
+            >
           </div>
         </div>
       </div>
-    </section>
+      
+    <!-- Add more sections here as needed -->
   </main>
   
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; <span id="current-year">2024</span> Maria. All rights reserved.</p>
+      <p>&copy; 2026 Maria. All rights reserved.</p>
     </div>
   </footer>
   
+  <!-- Back to Top -->
   <button class="back-to-top" aria-label="Back to top">↑</button>
   
-  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="src/scripts/main.js"></script>
 </body>
 </html>

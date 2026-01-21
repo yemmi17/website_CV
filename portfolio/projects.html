@@ -10,10 +10,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="src/styles/main.css">
-  <script type="module" src="src/scripts/main.js"></script>
+  <link rel="stylesheet" href="src/styles/pages/projects.css">
   
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  
+  <style>
+    .projects-page {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #10b981 0%, rgba(16, 185, 129, 0.1) 50%, transparent 100%);
+    }
+    
+    .projects-page::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+      z-index: -1;
+    }
+  </style>
 </head>
+<body class="projects-page">
+  <!-- Остальной код projects.html -->
 <body>
   <header class="header">
     <nav class="navbar container">
@@ -24,16 +46,15 @@
       </button>
       
       <ul class="navbar__menu">
-        <li><a href="index.html" class="navbar__link">Home</a></li>
-        <li><a href="about.html" class="navbar__link active">About</a></li>
-        <li><a href="projects.html" class="navbar__link">Projects</a></li>
-        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+        <li><a href="/" class="navbar__link">Home</a></li>
+        <li><a href="about" class="navbar__link">About</a></li>
+        <li><a href="projects" class="navbar__link active">Projects</a></li>
+        <li><a href="contacts" class="navbar__link">Contacts</a></li>
       </ul>
       
       <div class="navbar__social">
-        <a href="#" class="navbar__social-link" aria-label="LinkedIn">in</a>
-        <a href="#" class="navbar__social-link" aria-label="GitHub">gh</a>
-        <a href="#" class="navbar__social-link" aria-label="Dribbble">db</a>
+        <a href="https://www.linkedin.com/" class="navbar__social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="navbar__social-link" aria-label="Telegram">tg</a>
       </div>
     </nav>
   </header>
@@ -42,54 +63,104 @@
     <section class="simple-section">
       <div class="container">
         <div class="simple-content">
-          <h1 class="simple-title">My Projects</h1>
-          <p class="simple-subtitle">A collection of successful marketing campaigns and brand transformations</p>
+          <h1 class="simple-title"></h1>
+          <p class="simple-subtitle"></p>
           
           <div class="projects-grid">
             <!-- Project 1 -->
-            <div class="project-card">
+            <article class="project-card">
               <div class="project-image">
                 <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Project">
               </div>
               <div class="project-content">
-                <h3>E-commerce Brand Revamp</h3>
-                <p>Complete digital transformation resulting in 150% revenue growth.</p>
+                <h3 class="project-title">E-commerce Brand Revamp</h3>
+                <p class="project-description">
+                  Complete digital transformation for online fashion retailer resulting in 150% revenue growth.
+                </p>
                 <a href="#" class="project-link">View Case Study →</a>
               </div>
-            </div>
+            </article>
             
             <!-- Project 2 -->
-            <div class="project-card">
+            <article class="project-card">
               <div class="project-image">
                 <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Media Campaign">
               </div>
               <div class="project-content">
-                <h3>Viral Social Campaign</h3>
-                <p>2M+ impressions and 300% engagement increase across platforms.</p>
+                <h3 class="project-title">Viral Social Campaign</h3>
+                <p class="project-description">
+                  2M+ impressions and 300% engagement increase across multiple social platforms.
+                </p>
                 <a href="#" class="project-link">View Case Study →</a>
               </div>
-            </div>
+            </article>
             
             <!-- Project 3 -->
-            <div class="project-card">
+            <article class="project-card">
               <div class="project-image">
                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="UX Redesign">
               </div>
               <div class="project-content">
-                <h3>SaaS Platform UX Redesign</h3>
-                <p>40% reduction in bounce rate and improved user retention.</p>
+                <h3 class="project-title">SaaS Platform UX Redesign</h3>
+                <p class="project-description">
+                  40% reduction in bounce rate and improved user retention through intuitive design.
+                </p>
                 <a href="#" class="project-link">View Case Study →</a>
               </div>
-            </div>
+            </article>
+            
+            <!-- Project 4 -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analytics Dashboard">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Marketing Analytics Dashboard</h3>
+                <p class="project-description">
+                  Custom analytics solution that reduced reporting time by 70% for marketing team.
+                </p>
+                <a href="#" class="project-link">View Case Study →</a>
+              </div>
+            </article>
+            
+            <!-- Project 5 -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Email Campaign">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Automated Email Campaign</h3>
+                <p class="project-description">
+                  Multi-touch email sequence that increased lead conversion by 200% for B2B client.
+                </p>
+                <a href="#" class="project-link">View Case Study →</a>
+              </div>
+            </article>
+            
+            <!-- Project 6 -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brand Strategy">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Startup Brand Strategy</h3>
+                <p class="project-description">
+                  Complete brand identity and positioning for tech startup preparing for Series A funding.
+                </p>
+                <a href="#" class="project-link">View Case Study →</a>
+              </div>
+            </article>
           </div>
           
+          
           <div class="simple-actions">
-            <a href="/pages/contact.html" class="btn btn--primary">Start Your Project</a>
+            <a href="/contacts" class="btn btn--primary">Start Your Project</a>
           </div>
         </div>
       </div>
     </section>
   </main>
+  
   
   <footer class="footer">
     <div class="container">
